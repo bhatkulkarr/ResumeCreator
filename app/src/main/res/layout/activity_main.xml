@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<ScrollView
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/nameEt"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:hint="Full Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <EditText
+            android:id="@+id/mobileNoEt"
+            android:hint="Contact No"
+            android:layout_below="@+id/nameEt"
+            android:layout_marginTop="5dp"
+            android:inputType="phone"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:hint="Email"
+            android:layout_below="@+id/mobileNoEt"
+            android:layout_marginTop="5dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <EditText
+            android:id="@+id/desigEt"
+            android:hint="Designation"
+            android:layout_below="@+id/emailEt"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <EditText
+            android:id="@+id/orgnizaNameEt"
+            android:hint="Orgnization Name"
+            android:layout_below="@+id/desigEt"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/linkdeinProfileEt"
+            android:hint="Paste Linkdein Profile URL"
+            android:layout_below="@+id/orgnizaNameEt"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <EditText
+
+            android:id="@+id/proffexpEt"
+            android:hint="Professional / Industry "
+            android:layout_below="@+id/linkdeinProfileEt"
+            android:maxLines="5"
+            android:maxHeight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/summaryEt"
+            android:hint="Summary"
+            android:layout_below="@+id/proffexpEt"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <Button
+            android:layout_below="@+id/summaryEt"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/buttonstyle"
+            android:id="@+id/genrate_btn"
+            android:textColor="#fff"
+            android:text="Genrate CV"
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"/>
+
+    </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
